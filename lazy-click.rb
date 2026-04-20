@@ -5,21 +5,21 @@
 class LazyClick < Formula
   desc "High-performance Go TUI for project management systems."
   homepage "https://github.com/losty17/lazy-click"
-  version "0.1.0-alpha.1"
+  version "0.1.0-alpha.2"
   license "GPL-3.0-only"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/losty17/lazy-click/releases/download/v0.1.0-alpha.1/lazy-click_0.1.0-alpha.1_darwin_x86_64.tar.gz"
-      sha256 "0657c7a6fd741a20a7438e2d2e853612d47698c5350b3cd4a298a8223a56a53b"
+      url "https://github.com/losty17/lazy-click/releases/download/v0.1.0-alpha.2/lazy-click_0.1.0-alpha.2_darwin_x86_64.tar.gz"
+      sha256 "05f6d29ba54d05cfd997e821f7c6178326ce1afba0034da51e4e6f5a773aa182"
 
       define_method(:install) do
         bin.install "lazy-click"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/losty17/lazy-click/releases/download/v0.1.0-alpha.1/lazy-click_0.1.0-alpha.1_darwin_arm64.tar.gz"
-      sha256 "ec224c0f7831076b27526123115aa111928d6ed5009a4d874a0c30bf64682126"
+      url "https://github.com/losty17/lazy-click/releases/download/v0.1.0-alpha.2/lazy-click_0.1.0-alpha.2_darwin_arm64.tar.gz"
+      sha256 "5f01228ea4f18f6eb067e26f3f94795fe22f5e2c746f3bd5c46367d83cd2d92c"
 
       define_method(:install) do
         bin.install "lazy-click"
@@ -29,15 +29,15 @@ class LazyClick < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/losty17/lazy-click/releases/download/v0.1.0-alpha.1/lazy-click_0.1.0-alpha.1_linux_x86_64.tar.gz"
-      sha256 "e66628312670ce288bfcb183937eaa4f00b9039298fa82ef23b85debd542c4f0"
+      url "https://github.com/losty17/lazy-click/releases/download/v0.1.0-alpha.2/lazy-click_0.1.0-alpha.2_linux_x86_64.tar.gz"
+      sha256 "5719a6503d82b29bf8d1e788e379122babe76f18bd0f3d6b73a12569441953f9"
       define_method(:install) do
         bin.install "lazy-click"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/losty17/lazy-click/releases/download/v0.1.0-alpha.1/lazy-click_0.1.0-alpha.1_linux_arm64.tar.gz"
-      sha256 "6c7dad9fa24d4066e8a460a8e4062352abd959f8a4dfb6e9667248e742e830a6"
+      url "https://github.com/losty17/lazy-click/releases/download/v0.1.0-alpha.2/lazy-click_0.1.0-alpha.2_linux_arm64.tar.gz"
+      sha256 "5150e562569d99d7779127f5d0894f32a775c2a5a174ca4418cd6c4908df3a08"
       define_method(:install) do
         bin.install "lazy-click"
       end
